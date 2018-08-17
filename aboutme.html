@@ -49,7 +49,11 @@ li.css a {
     });
 	
 	function changeUrl(urlAddr) {
-		window.location.href = urlAddr + '?ts=' + Date.now();
+    var root = window.location.protocol + '//' + window.location.host + window.location.pathname
+    alert('path1='+ root);
+    root = root + '/' + urlAddr + '?ts=' + Date.now();
+    alert('path2='+ root);
+    window.location.href = root;
 	}
 	
 	function directUrl(urlAddr) {
