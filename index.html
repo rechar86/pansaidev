@@ -55,11 +55,7 @@ li.css a {
     });
 	
 	function changeUrl(urlAddr) {
-    var root = window.location.protocol + '//' + window.location.host + window.location.pathname
-    alert('path1='+ root);
-    root = root + '/' + urlAddr + '?ts=' + Date.now();
-    alert('path2='+ root);
-    window.location.href = root;
+		window.location.href = urlAddr + '?ts=' + Date.now();
 	}
 	
 	function directUrl(urlAddr) {
