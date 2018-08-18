@@ -5,7 +5,7 @@ function changeUrl(urlAddr) {
     var pathArray = pathanme.split("/");
 var path = pathArray[pathArray.length-2];	
     alert('path='+ path);
-    root = root + path;
+    root = root + '/' + path;
 root = root + '/' + urlAddr + '?ts=' + Date.now();
 alert('path2='+ root);
 window.location.href = root;
