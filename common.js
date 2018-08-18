@@ -3,12 +3,12 @@ function changeUrl(urlAddr) {
     alert('path1='+ root);
     var pathanme = window.location.pathname;
     var pathArray = pathanme.split("/");
-var path = pathArray[pathArray.length-2];	
+    var path = pathArray[pathArray.length-2];	
     alert('path='+ path);
     root = root + '/' + path;
-root = root + '/' + urlAddr + '?ts=' + Date.now();
-alert('path2='+ root);
-window.location.href = root;
+    root = root + '/' + urlAddr + '?ts=' + Date.now();
+    alert('path2='+ root);
+    window.location.href = root;
 }
 
 function directUrl(urlAddr) {
