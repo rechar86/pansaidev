@@ -13,11 +13,13 @@
 	<script src="./lib/lightbox-plus-jquery.js"></script>
 	<script src="./lib/jquery-ui.js"></script>
 	<script src="./lib/datepicker-zh-TW.js"></script>
+	<script src="common.js"></script>
+	<script src="shop-mid.js"></script>
 	<link rel="Shortcut Icon" type="image/x-icon" href="./slides/logo.jpg" />
 	<link rel="stylesheet" href="./lib/jquery.mobile-1.4.5.min.css" />
 	<link rel="stylesheet" href="./lib/jquery-ui.css" />
 	<link rel="stylesheet" href="./lib/bootstrap.min.css /">
-    <link rel="stylesheet" href="./lib/lightbox.min.css">
+  <link rel="stylesheet" href="./lib/lightbox.min.css">
 	<style>
 		table { width:100%; border-spacing: 0; }
 		th { text-align:left; }
@@ -26,21 +28,6 @@
 		td .ui-btn { margin:.4em 0 .5em 0; }
 		td .ui-btn-inner { padding: .4em 15px; }
 	</style>
-	<script src="shop-mid.js"></script>
-	
-<script>
-	function changeUrl(urlAddr) {
-    var root = window.location.protocol + '//' + window.location.host + window.location.pathname
-    alert('path1='+ root);
-    root = root + '/' + urlAddr + '?ts=' + Date.now();
-    alert('path2='+ root);
-    window.location.href = root;
-	}
-	
-	function directUrl(urlAddr) {
-		window.open(urlAddr, '_blank');
-	}	
-</script>	
 </head>
 
 <body>
