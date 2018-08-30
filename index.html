@@ -54,14 +54,27 @@ li.css a {
         }
       });
     });
-	
+  
+  
+  var viewstate = 1;
+  function switch2PlaneView(){
+    //alert("---switch_view--");
+    if(viewstate == 1){
+      $('#f1').removeAttr("class");
+      $('#f1').removeAttr("style");
+      $('#f1').removeAttr("id");
+      viewstate = 2;
+    }
+    else{
+      changeUrl('wristband.html');
+      viewstate = 1;
+    } 
 
   </script>
 
 </head>
 
 <body class="loading">
-  <div id="load">loadding...</div>
   <div id="page" data-role="page" class="type-interior">
 	<!-- /header -->
 	<div data-role="header" data-theme="b">
@@ -76,6 +89,7 @@ li.css a {
 		</h1>
 	</div>
 <!--content-->
+<a href="#" onclick="switch2PlaneView()">商品檢視切換(若您看不到圖片輪播,請點我切換)</a>
 <div class="flexslider" id="f1" style="direction:rtl">
   <ul class="slides">
     <li>
