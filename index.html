@@ -56,19 +56,20 @@ li.css a {
     });
   
   
-  var viewstate = 1;
-  function switch2PlaneView(){
-    //alert("---switch_view--");
-    if(viewstate == 1){
-      $('#f1').removeAttr("class");
-      $('#f1').removeAttr("style");
-      $('#f1').removeAttr("id");
-      viewstate = 2;
+    var viewstate = 1;
+    function switch2PlaneView(){
+      //alert("---switch_view--");
+      if(viewstate == 1){
+        $('#f1').removeAttr("class");
+        $('#f1').removeAttr("style");
+        $('#f1').removeAttr("id");
+        viewstate = 2;
+      }
+      else{
+        changeUrl('index.html');
+        viewstate = 1;
+      }
     }
-    else{
-      changeUrl('wristband.html');
-      viewstate = 1;
-    } 
 
   </script>
 
