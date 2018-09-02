@@ -12,6 +12,7 @@
 	<script type="text/javascript" src="./js/modernizr-1.5.min.js"></script>
 	<script defer src="./js/jquery.flexslider.js"></script>
 	<script src="common.js"></script>
+	<script src="content.js"></script>
 	<link rel="Shortcut Icon" type="image/x-icon" href="./slides/logo.jpg" />
 	<link rel="stylesheet" href="./lib/jquery.mobile-1.4.5.min.css" />
 	<link rel="stylesheet" href="./css/demo.css" type="text/css" media="screen" />
@@ -51,11 +52,11 @@ li.css a {
   </script>
 </head>
 
-<body class="loading">
+<body class="loading" onload="getContentMe()">
   <div data-role="page" class="type-interior">
 	<!-- /header -->
 	<div data-role="header" data-theme="b">
-		<h1>關於PAN-SAI</h1>
+		<h1>關於PAN-SAI</h1> 
 		<a href="javaScript:void(0)" onclick="changeUrl('index.html')"    data-icon="forward" data-direction="reverse">彌月蛋糕</a>
 		<a href="javaScript:void(0)" onclick="changeUrl('mid.html')"      data-icon="forward" data-direction="reverse">中秋頌禮</a>		
 		<a href="tel:0973019889" data-icon="phone" data-direction="reverse">打給PanSai</a>
@@ -67,20 +68,17 @@ li.css a {
 	</div>
 <!--content-->
 <div id="content" data-role="content">
-		<div>
-			<img src="./slides/logo.jpg" width="10%"/>		
-					<p>"PAN-SAI "一詞來自一位30年經驗李師傅用心做點心的歷程</p>
-					<p>音譯自台語 "麵包師傅"</p>
-					<p>形象為"老獅咬德國結"</p>
-					<p>德國結為中古歐洲16世紀以來</p>
-					<p>點心基爾特(同業工會)的共同標記</p>
-					<p>意即師傅秉持歐式點心製作用心的態度</p>
-					<p>努力開發適合臺灣人新口味</p>
-					</br>
-					<p>第一季產品主打蛋糕系列</p>
-					<p>陸續每一季會有不同神秘之點心系列產品出爐</p>
-					<p>舊雨新知 敬請期待</p>
-	</div>
+	<div id="content_me"></div>
+	<div><p>有任何問題或建議, 都可以發送LINE訊息給我喔! </p></div>
+	<div id="line2me">
+			<form action="" method="GET">
+					<input type="text" class="form-control" name="name" placeholder="輸入您的大名">		
+					<input type="text" class="form-control" name="email"" placeholder="輸入您的電子信箱">		
+					<input type="text" class="form-control" name="mobile" placeholder="輸入您的手機">			
+					<textarea name="msg" placeholder="輸入您的建議或是詢問商品"></textarea>
+					<button type="submit" id="btnSubmit" onclick="doPANSAI_LINE2ME()" class="btn btn-success">送出LINE訊息</button>
+			</form>
+	</div>	
 </div>				
 	<!-- footer -->
 	<div data-role="footer" data-theme="b">
