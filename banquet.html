@@ -1,0 +1,299 @@
+﻿<!doctype html>
+<html>
+<head>
+	<title>PAN-SAI烘焙手作坊</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8" />
+	<meta http-equiv="Content-Language" content="zh-tw" />
+	<meta name="keywords" content="PAN SAI,麵包獅,蛋糕,網路訂餐,預購,預約試吃,團體訂購,父親節,母親節,中秋節,生日蛋糕" />
+	<meta name="description" content="PAN-SAI烘焙手作坊 歡迎機關團體來電預約試吃 0973-019-889, 滿10條 9折優惠免運, 滿20條 78折優惠免運, 滿30條 65折優惠免運" />
+	<script src="./lib/jquery-1.8.3.min.js"></script>
+	<script src="./lib/jquery.mobile-1.4.5.min.js"></script>
+	<script src="./js/modernizr.js"></script>
+	<script defer src="./js/jquery.flexslider.js"></script>
+	<script src="common.js"></script>
+	<link rel="Shortcut Icon" type="image/x-icon" href="./slides/logo.jpg" />
+	<link rel="stylesheet" href="./lib/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="./css/demo.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="./css/flexslider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="./css/flexslider-rtl.css" type="text/css" media="screen" />
+
+
+<style type="text/css">
+.flex-caption {
+  width: 96%;
+  padding: 2%;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.5);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+  font-size: 14px;
+  line-height: 18px;
+}
+li.css a {
+  border-radius: 0;
+}
+</style>
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('#f1').flexslider({
+        animation: "slide",
+		    rtl: true,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+	
+		var viewstate = 1;
+		function switch2PlaneView(){
+			//alert("---switch_view--");
+			if(viewstate == 1){
+				$('#f1').removeAttr("class");
+				$('#f1').removeAttr("style");
+				$('#f1').removeAttr("id");
+				viewstate = 2;
+			}
+			else{
+				changeUrl('mid.html');
+				viewstate = 1;
+			} 
+		}
+
+  </script>
+
+</head>
+
+<body class="loading">
+  <div data-role="page" class="type-interior">
+	<!-- /header -->
+	<div data-role="header" data-theme="b">
+		<h1>宴會茶點</h1>
+		<a href="javaScript:void(0)" onclick="changeUrl('index.html')"    data-icon="forward" data-direction="reverse">回首頁</a>
+		<a href="javaScript:void(0)" onclick="changeUrl('shop-mid.html')" data-icon="shop"    data-direction="reverse">我要訂購</a>		
+		<a href="tel:0973019889" data-icon="phone"" data-direction="reverse">打給PanSai</a>
+		<h1 style="font-size: 12px;">				
+			  <a href="javaScript:void(0)" onclick="changeUrl('aboutme.html')"           data-direction="reverse" ><font color="orange">PanSai</font></a>
+			．<a href="javaScript:void(0)" onclick="changeUrl('line2me.html')"           data-direction="reverse" ><font color="yellow">私訊</font></a>
+			．<a href="javaScript:void(0)" onclick="directUrl('http://line.me/ti/p/%40ean2116u')" data-direction="reverse" target="_blank"><font color="00B900">加LINE</font></a>
+		</h1>
+	</div>
+<!--content-->
+<a href="#" onclick="switch2PlaneView()">商品檢視切換(若您看不到圖片輪播,請點我切換)</a>
+<div class="flexslider" id="f1" style="direction:rtl">
+  <ul class="slides">
+    <li>
+      <img src="./slidesmid/01.JPG" />
+      <p class="flex-caption"><strong>葡月之頌 禮盒</strong>
+	  </br>
+	  </br><strong>特價280 <del>原價360</del> </strong>
+	  </br>
+		  </br> 烏豆沙蛋黃酥✖2 <font color="yellow">蛋、奶</font>
+		  </br>       金玉酥✖2 <font color="yellow">蛋、奶</font>
+		  </br> 綠豆沙蛋黃酥✖2 <font color="yellow">蛋、奶</font>
+		  </br>   金月奶皇酥✖2 <font color="yellow">蛋、奶</font>
+	  </p>
+    </li>	
+    <li>
+      <img src="./slidesmid/02.JPG" />
+      <p class="flex-caption"><strong>霧月之頌 禮盒</strong>
+		  </br>
+		  </br>綠豆椪或咖哩酥<font color="yellow">葷</font>
+		  </br>
+		  </br>6入 特價240 <del>原價300</del>
+		  </br>8入 特價320 <del>原價400</del>
+		  </br>12入 特價480 <del>原價600</del>
+	  </p>
+    </li>
+    <li>
+      <img src="./slidesmid/03.JPG" />
+      <p class="flex-caption"><strong>霜月之頌 禮盒</strong>
+	      </br>
+		  </br><strong>大 特價425 <del>原價530</del></strong>
+			</br>      鳳梨酥✖4 <font color="yellow">蛋、奶</font>
+			</br>      綠豆椪✖3 <font color="yellow">葷</font>
+			</br>    杏仁瓦片✖1 <font color="yellow">蛋、奶</font>
+			</br>杏仁芝麻瓦片✖1 <font color="yellow">蛋、奶</font>
+			</br>綜合堅果(小)✖1 <font color="yellow">素</font>
+		  </br>
+		  </br><strong>小 特價320 <del>原價420</del></strong>
+		  </br>      咖哩酥✖3 <font color="yellow">葷</font>
+		  </br>綜合堅果(大)✖1 <font color="yellow">素</font>
+		  </br>    瓦芙煎餅✖4 <font color="yellow">蛋、奶</font>
+	  </p>
+    </li>
+    <li>
+      <img src="./slidesmid/04.JPG" />
+      <p class="flex-caption"><strong>雪月之頌 禮盒</strong>
+			</br>
+			</br><strong>特價420 <del>原價540</del></strong>
+			</br>
+			</br>金酥小月餅✖6 <font color="yellow">葷</font>
+			</br>金月奶皇酥✖6 <font color="yellow">蛋、奶</font>
+	  </p>
+    </li>
+    <li>
+      <img src="./slidesmid/05.JPG" />
+      <p class="flex-caption"><strong>芽月之頌 禮盒</strong>
+			</br>
+			</br><strong>特價350 <del>原價440</del></strong>
+			</br>
+			</br>咖哩酥✖2 <font color="yellow">葷</font>
+			</br>綠豆椪✖2 <font color="yellow">葷</font>
+			</br>芋香酥✖3 <font color="yellow">蛋、奶</font>
+			</br>鳳梨酥✖3 <font color="yellow">蛋、奶</font>
+	  </p>
+    </li>
+    <li>
+      <img src="./slidesmid/06.JPG" />
+      <p class="flex-caption"><strong>花月之頌 禮盒</strong>
+			</br>
+			</br><strong>特價330 <del>原價420</del></strong>
+			</br>
+			</br>    咖哩酥✖2 <font color="yellow">葷</font>
+			</br>金月奶皇酥✖3 <font color="yellow">蛋、奶</font>
+			</br>    芋香酥✖3 <font color="yellow">蛋、奶</font>
+	  </p>
+    </li>
+    <li>
+      <img src="./slidesmid/07.JPG" />
+      <p class="flex-caption"><strong>牧月之頌 禮盒</strong>
+		  </br>
+		  </br><strong>蛋黃酥 <font color="yellow">蛋、奶</font></strong>
+		  </br>
+			</br>8入  特價280 <del>原價360</del>
+			</br>10入 特價350 <del>原價450</del>
+			</br>12入 特價420 <del>原價540</del>
+			</br>15入 特價535 <del>原價675</del>
+			</br>20入 特價700 <del>原價900</del>
+	  </p>
+    </li>
+    <li>
+      <img src="./slidesmid/08.JPG" />
+      <p class="flex-caption"><strong>菓月之頌 禮盒</strong>
+		  </br>
+		  </br><strong>鳳梨酥 <font color="yellow">蛋、奶</font></strong>
+		  </br>
+			</br>8入  特價224 <del>原價280</del>
+			</br>10入 特價280 <del>原價350</del>
+			</br>12入 特價336 <del>原價420</del>
+			</br>15入 特價420 <del>原價525</del>
+			</br>20入 特價560 <del>原價700</del>
+	  </p>
+		</li>	
+		<li>
+      <img src="./slidesmid/A01.JPG" />
+      <p class="flex-caption"><strong>咖喱酥</strong>
+				</br>
+				</br><strong><font color="yellow">葷</font></strong>
+				</br>
+				</br>特價(禮盒)40 <del>原價50</del>
+	  	</p>
+		</li>	
+		<li>
+      <img src="./slidesmid/A02.JPG" />
+      <p class="flex-caption"><strong>綠豆碰</strong>
+				</br>
+				</br><strong><font color="yellow">葷</font></strong>
+				</br>
+				</br>特價(禮盒)40 <del>原價50</del>
+	  	</p>
+		</li>	
+		<li>
+      <img src="./slidesmid/A03.JPG" />
+      <p class="flex-caption"><strong>鳳梨酥</strong>
+				</br>
+				</br><strong><font color="yellow">蛋、奶</font></strong>
+				</br>
+				</br>特價(禮盒)28 <del>原價35</del>
+	  	</p>
+		</li>	
+		<li>
+      <img src="./slidesmid/A04.JPG" />
+      <p class="flex-caption"><strong>烏豆沙蛋黃酥</strong>
+				</br>
+				</br><strong><font color="yellow">蛋、奶</font></strong>
+				</br>
+				</br>特價(禮盒)35 <del>原價45</del>
+	  	</p>
+		</li>	
+		<li>
+      <img src="./slidesmid/A05.JPG" />
+      <p class="flex-caption"><strong>金玉酥</strong>
+				</br>
+				</br><strong><font color="yellow">蛋、奶</font></strong>
+				</br>
+				</br>特價(禮盒)35 <del>原價45</del>
+	  	</p>
+		</li>
+		<li>
+      <img src="./slidesmid/A06.JPG" />
+      <p class="flex-caption"><strong>金月奶皇酥</strong>
+				</br>
+				</br><strong><font color="yellow">蛋、奶</font></strong>
+				</br>
+				</br>特價(禮盒)35 <del>原價45</del>
+	  	</p>
+		</li>
+		<li>
+      <img src="./slidesmid/A07.JPG" />
+      <p class="flex-caption"><strong>綠豆沙蛋黃酥</strong>
+				</br>
+				</br><strong><font color="yellow">蛋、奶</font></strong>
+				</br>
+				</br>特價(禮盒)35 <del>原價45</del>
+	  	</p>
+		</li>
+		<li>
+      <img src="./slidesmid/A08.JPG" />
+      <p class="flex-caption"><strong>芋香酥</strong>
+				</br>
+				</br><strong><font color="yellow">蛋、奶</font></strong>
+				</br>
+				</br>特價(禮盒)35 <del>原價45</del>
+	  	</p>
+		</li>
+		<li>
+      <img src="./slidesmid/A09.JPG" />
+      <p class="flex-caption"><strong>金酥小月餅</strong>
+				</br>
+				</br><strong><font color="yellow">葷</font></strong>
+				</br>
+				</br>特價(禮盒)35 <del>原價45</del>
+	  	</p>
+		</li>
+		<li>
+      <img src="./slidesmid/A10.JPG" />
+      <p class="flex-caption"><strong>瓦芙奶油煎餅</strong>
+				</br>
+				</br><strong><font color="yellow">蛋、奶</font></strong>
+				</br>
+				</br>特價(禮盒)22 <del>原價32</del>
+	  	</p>
+		</li>
+		<li>
+      <img src="./slidesmid/A11.JPG" />
+      <p class="flex-caption"><strong>瓦芙巧克力煎餅</strong>
+				</br>
+				</br><strong><font color="yellow">蛋、奶</font></strong>
+				</br>
+				</br>特價(禮盒)22 <del>原價32</del>
+	  	</p>
+    </li>
+   </ul>
+</div>			
+	<!-- footer -->
+	<div data-role="footer" data-theme="b">
+			<h3 style="font-size: 12px;">				
+				  <a href="javaScript:void(0)" onclick="directUrl('https://www.facebook.com/sharer/sharer.php?u=https%3A//www.facebook.com/profile.php?id=100015144941143')"  data-direction="reverse" target="_blank"><font color="3B5CA0">FB</font></a>
+				．<a href="javaScript:void(0)" onclick="directUrl('https://www.instagram.com/f560928/')"                       data-direction="reverse" target="_blank"><font color="D82F80">IG</font></a>
+				．<a href="javaScript:void(0)" onclick="directUrl('http://line.me/ti/p/%40ean2116u')"                          data-direction="reverse" target="_blank"><font color="00B900">LINE</font></a>
+			</h3>	
+			<h3 style="font-size: 10px;">新北市板橋區中興路25號 <a href="tel:0973019889" class="ui-link-inherit">訂購專線 0973-019-889</a><//h3>
+			<h3 style="font-size: 10px;">Copyright 2018@PAN-SAI烘焙手作坊 All Rights Reserved.</h3>
+	</div>
+</html>
