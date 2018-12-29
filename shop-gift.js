@@ -11,7 +11,7 @@ $(document).ready(function() {
 		// there are many ways to get this data using jQuery (you can use the class or id also)
 		var formData = {
 			'order_type' 		: 'PANSAI_GIFT',
-			'prod_01-1' 		: $('input[name=prod_01_1]').val(),
+			'prod_01_1' 		: $('input[name=prod_01_1]').val(),
 			'prod_01_2' 		: $('input[name=prod_01_2]').val(),
 			'prod_02' 			: $('input[name=prod_02]').val(),
 			'prod_03' 			: $('input[name=prod_03]').val(),
