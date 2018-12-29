@@ -130,54 +130,54 @@ function showTempate(shopdata) {
 						</tr>					
 						<tr>
 							<th style="text-align:left">合計數量</th>
-							<td>${order[19]}</td>
+							<td>${order[11]}</td>
 						</tr>
 						<tr>
 							<th style="text-align:left">小計</th>
-							<td>${order[20]}</td>
+							<td>${order[12]}</td>
 						</tr>
 						<tr>
 							<th style="text-align:left">運費</th>
-							<td>${order[21]}</td>
+							<td>${order[13]}</td>
 						</tr>
 						<tr>
 							<th style="text-align:left">總金額</th>
-							<td>${order[22]}</td>
+							<td>${order[14]}</td>
 						</tr>
 						<tr>
 							<th colspan="2" style=" border-left: 6px solid red;background-color: lightgrey;">訂購人資訊</th>
 						</tr>
 						<tr>
 							<th style="text-align:left">訂購人/公司行號</th>
-							<td>${order[11]}</td>
-						</tr>
-						<tr>
-							<th style="text-align:left">手機</th>
-							<td>${order[12]}</td>
-						</tr>
-						<tr>
-							<th style="text-align:left">市內電話</th>
-							<td>${order[13]}</td>
-						</tr>
-						<tr>
-							<th style="text-align:left">電子郵件地址</th>
-							<td>${order[14]}</td>
-						</tr>
-						<tr>
-							<th style="text-align:left">送達日期</th>
 							<td>${order[15]}</td>
 						</tr>
 						<tr>
-							<th style="text-align:left">送達時間</th>
+							<th style="text-align:left">手機</th>
 							<td>${order[16]}</td>
 						</tr>
 						<tr>
-							<th style="text-align:left">地址</th>
+							<th style="text-align:left">市內電話</th>
 							<td>${order[17]}</td>
 						</tr>
 						<tr>
-							<th style="text-align:left">給師傅的悄悄話</th>
+							<th style="text-align:left">電子郵件地址</th>
 							<td>${order[18]}</td>
+						</tr>
+						<tr>
+							<th style="text-align:left">送達日期</th>
+							<td>${order[19]}</td>
+						</tr>
+						<tr>
+							<th style="text-align:left">送達時間</th>
+							<td>${order[20]}</td>
+						</tr>
+						<tr>
+							<th style="text-align:left">地址</th>
+							<td>${order[21]}</td>
+						</tr>
+						<tr>
+							<th style="text-align:left">給師傅的悄悄話</th>
+							<td>${order[22]}</td>
 						</tr>
 					</table>				
 					`
